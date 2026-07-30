@@ -206,6 +206,37 @@ a {
     color: var(--muted);
 }
 
+.hero-actions {
+    margin: 28px 0 0;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.btn-download:hover {
+    background: #3f37c9;
+    border-color: #3f37c9;
+}
+
+.btn-download:active {
+    transform: translateY(1px);
+}
+
+.btn-download span {
+    font-size: 15px;
+}
+
 /* ---------- spec rows (label / value) ---------- */
 .specs {
     margin: 40px 0 0;
@@ -260,6 +291,14 @@ a {
     border-bottom: 1px solid var(--line);
     font-size: 15.5px;
     line-height: 1.6;
+}
+
+.work a {
+    color: var(--accent);
+}
+
+.work a:hover {
+    text-decoration: underline;
 }
 
 .work li::before {
@@ -320,6 +359,25 @@ a {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.02em;
+}
+
+.role-group {
+    margin: 30px 0 0;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.role-group + .work {
+    border-top: none;
+    margin-top: 12px;
+}
+
+.when {
+    color: var(--faint);
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .role-sub {
