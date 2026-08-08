@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <!-- Language auto-select: browser detection on first visit, saved choice wins -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('site-lang');
+                var target = saved || ((navigator.language || '').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en');
+                if (target === 'ru') location.replace('ru.html' + location.hash);
+            } catch (e) {}
+        })();
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBD1GTHV6H"></script>
     <script>
@@ -10,7 +21,6 @@
 
         gtag('config', 'G-NBD1GTHV6H');
     </script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iskander Gubaidullin — Frontend Developer</title>
     <link rel="stylesheet" href="styles.css">
@@ -28,12 +38,19 @@
                     <span class="brand-role">Frontend Developer</span>
                 </span>
             </a>
-            <nav class="nav">
-                <a href="#summary"><span class="num">01</span>Summary</a>
-                <a href="#experience"><span class="num">02</span>Experience</a>
-                <a href="#projects"><span class="num">03</span>Projects</a>
-                <a href="#coreskills"><span class="num">04</span>Core Skills</a>
-            </nav>
+            <div class="topbar-nav">
+                <nav class="nav">
+                    <a href="#summary"><span class="num">01</span>Summary</a>
+                    <a href="#experience"><span class="num">02</span>Experience</a>
+                    <a href="#projects"><span class="num">03</span>Projects</a>
+                    <a href="#coreskills"><span class="num">04</span>Core Skills</a>
+                </nav>
+                <div class="lang">
+                    <a class="is-active" href="index.html" aria-current="true" title="Read in English" aria-label="Read in English">EN</a>
+                    <span class="sep">/</span>
+                    <a href="ru.html" title="Читать по-русски" aria-label="Читать по-русски">RU</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -281,6 +298,12 @@ component libraries, Node.js services, and LLM integrations — both through hos
         }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
 
         sections.forEach(s => spy.observe(s));
+
+        document.querySelectorAll('.lang a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                try { localStorage.setItem('site-lang', a.getAttribute('href') === 'ru.html' ? 'ru' : 'en'); } catch (e) {}
+            });
+        });
     </script>
 </body>
 </html>

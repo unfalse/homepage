@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Language: honor an explicit saved choice (browser auto-detect only runs on the EN root) -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('site-lang') === 'en') location.replace('index.html' + location.hash);
+            } catch (e) {}
+        })();
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBD1GTHV6H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NBD1GTHV6H');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Искандер Губайдуллин — Frontend-разработчик</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="#top">
+                <img class="brand-mark" src="assets/logo.svg" alt="" width="34" height="34">
+                <span>
+                    <span class="brand-name">Искандер Губайдуллин</span>
+                    <span class="brand-role">Frontend-разработчик</span>
+                </span>
+            </a>
+            <div class="topbar-nav">
+                <nav class="nav">
+                    <a href="#summary"><span class="num">01</span>О себе</a>
+                    <a href="#experience"><span class="num">02</span>Опыт</a>
+                    <a href="#projects"><span class="num">03</span>Проекты</a>
+                    <a href="#coreskills"><span class="num">04</span>Навыки</a>
+                </nav>
+                <div class="lang">
+                    <a href="index.html" title="Read in English" aria-label="Read in English">EN</a>
+                    <span class="sep">/</span>
+                    <a class="is-active" href="ru.html" aria-current="true" title="Читать по-русски" aria-label="Читать по-русски">RU</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap" id="top">
+        <!-- 01 · О себе -->
+        <section class="section hero" id="summary">
+            <div class="section-head">
+                <p class="eyebrow">Senior Frontend-разработчик · Ереван, Армения</p>
+                <h1 class="section-title">Искандер<br>Губайдуллин</h1>
+                <p class="page-lead">
+Frontend-разработчик с 14 годами опыта в разработке ПО, из них 11+ лет — во фронтенде, включая 8+ лет в EPAM
+Systems, где занимался созданием и модернизацией корпоративных веб-приложений для клиентов Acoustic L.P.,
+Edmunds.com и Московская биржа.
+Специализация — миграция legacy-систем: перенос приложений с JSF и AngularJS на React/TypeScript, модернизация
+тестов с Enzyme на React Testing Library, внедрение метрик производительности и стандартов линтинга. Также
+разрабатывал общие библиотеки компонентов, сервисы на Node.js и интеграции с LLM — как через внешние API,
+так и на собственном инференсе.
+                </p>
+                <p class="hero-actions">
+                    <a class="btn-download" href="Iskander_Gubaidullin_CV_RU.pdf" download>
+                        Скачать резюме <span aria-hidden="true">↓</span>
+                    </a>
+                </p>
+            </div>
+
+            <dl class="specs">
+                <div class="spec">
+                    <dt>Профессия</dt>
+                    <dd>Frontend-разработчик</dd>
+                </div>
+                <div class="spec">
+                    <dt>Технологии</dt>
+                    <dd>React, TypeScript, JavaScript, Redux</dd>
+                </div>
+                <div class="spec">
+                    <dt>Telegram</dt>
+                    <dd><a href="https://t.me/zhpg7" target="_blank" rel="noopener">@zhpg7</a></dd>
+                </div>
+                <div class="spec">
+                    <dt>E-mail</dt>
+                    <dd><a href="mailto:fadeout01@gmail.com">fadeout01@gmail.com</a></dd>
+                </div>
+                <div class="spec">
+                    <dt>Телефон</dt>
+                    <dd><a href="tel:+374 91 250 346">+374 91 250 346</a></dd>
+                </div>
+                <div class="spec">
+                    <dt>Локация</dt>
+                    <dd>Ереван, Армения</dd>
+                </div>
+                <div class="spec">
+                    <dt>Доступность</dt>
+                    <dd>Удалённая работа или релокация</dd>
+                </div>
+                <div class="spec">
+                    <dt>Образование</dt>
+                    <dd>Магистр, физика и математика — БГПУ им. М. Акмуллы, Уфа, 2003–2008</dd>
+                </div>
+                <div class="spec">
+                    <dt>Языки</dt>
+                    <dd>Русский (родной), английский (B2)</dd>
+                </div>
+                <div class="spec">
+                    <dt>Github</dt>
+                    <dd><a href="https://github.com/unfalse" target="_blank" rel="noopener">github.com/unfalse</a></dd>
+                </div>
+                <div class="spec">
+                    <dt>LinkedIn</dt>
+                    <dd><a href="https://linkedin.com/in/iskander-goubaidullin-4314a941b" target="_blank" rel="noopener">iskander-goubaidullin</a></dd>
+                </div>
+                <div class="spec">
+                    <dt>Сайт</dt>
+                    <dd><a href="https://unfalsecoding.net" target="_blank" rel="noopener">unfalsecoding.net</a></dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- 02 · Опыт работы -->
+        <section class="section" id="experience">
+            <div class="section-head">
+                <p class="eyebrow">02 / Карьера</p>
+                <h2 class="section-title">Опыт работы</h2>
+            </div>
+
+            <div class="exp-jump">
+                <span class="exp-jump-label">Перейти к</span>
+                <a href="#exp-epam">EPAM</a>
+                <a href="#exp-bell">Bell Integrator</a>
+            </div>
+
+            <article class="role" id="exp-epam">
+                <h3 class="role-title">EPAM Systems</h3>
+                <p class="role-sub">июль 2017 – апрель 2026</p>
+                <p class="role-lead">Корпоративные веб-приложения, финтех и банковские платформы, инструменты для разработчиков.</p>
+                <ul class="work">
+                    <li><strong>edmunds.com (основной проект — React, Node.js, SASS):</strong> выполнил миграцию AWS SDK с v2 на v3 — адаптировал кодовую базу и актуализировал unit-тесты, что позволило сократить объём кода в 2 раза и избавиться от deprecated-кода; успешно провёл миграцию юнит-тестов (на Jest) с устаревшего Enzyme на React Testing Library, в результате повысились стабильность UI и удобство разработки; провёл обновление стилей и пакетов SASS.</li>
+                    <li><strong>edmunds.com (админка для A/B-тестов):</strong> разрабатывал новый функционал с использованием PostgreSQL, REST и cookies.</li>
+                    <li><strong>ВТБ:</strong> настраивал систему сбора фронтенд-метрик в проектах на TypeScript и React, проводил анализ полученных данных для выявления и устранения узких мест (bottlenecks). Как итог, повысилась производительность проектов.</li>
+                    <li><strong>API Gateway / ApiDocs:</strong> внедрил обязательный code review, в результате повысилось качество кода. Мигрировал unit-тесты с Enzyme на React Testing Library и перевёл проект на TypeScript, при этом снизилось количество ошибок в коде.</li>
+                    <li><strong>Московская Биржа:</strong> провёл модернизацию фронтенда торговой платформы на современный стек (React, TypeScript, AG Grid, Ant Design).</li>
+                    <li><strong>EPAM Referral Portal (refer.epam.com):</strong> с нуля собрал фронтенд проекта на React на основе макетов и старого приложения (целиком на Java), в итоге UX улучшился по сравнению со старым порталом.</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-bell">
+                <h3 class="role-title">Bell Integrator</h3>
+                <p class="role-sub">март 2017 – июль 2017</p>
+                <p class="role-lead">Аутсорс-проект для Сбер-технологий.</p>
+                <ul class="work">
+                    <li>Проводил технические собеседования фронтенд-разработчиков; один из кандидатов, которого я собеседовал, был принят в команду.</li>
+                    <li>Участвовал в миграции Reflux → Redux.</li>
+                    <li>Разрабатывал и изменял формы для банковской системы.</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-inline">
+                <h3 class="role-title">ООО «Инлайн»</h3>
+                <p class="role-sub">октябрь 2016 – март 2017</p>
+                <ul class="work">
+                    <li>Поддерживал и развивал унаследованные кодовые базы;</li>
+                    <li>Разрабатывал бэкенд на C# и фронтенд-логику на ASP.NET / Kendo UI для сложных иерархий данных;</li>
+                    <li>Участвовал в анализе требований и прототипировании CRM-системы.</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-medialux-2016">
+                <h3 class="role-title">ООО «Медиалюкс»</h3>
+                <p class="role-sub">июнь 2016 – октябрь 2016</p>
+                <ul class="work">
+                    <li>Разрабатывал интерфейсы и рабочие процессы на JavaScript для гибридных сред SharePoint (2013 и Online);</li>
+                    <li>Настраивал структуры данных платформы;</li>
+                    <li>Создавал инструменты на C# / WinForms для внутренних процессов.</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-mobill">
+                <h3 class="role-title">ООО «Мобилл+»</h3>
+                <p class="role-sub">июнь 2014 – апрель 2016</p>
+                <p class="role-lead">Mobill-Cross — учёт и паспортизация линейно-кабельных сооружений, сетей передачи данных и оборудования местных кабельных сетей.</p>
+                <ul class="work">
+                    <li>Создавал сложные интерактивные модули на JavaScript — например, схемы кроссировок для удобства отслеживания и редактирования подключений.</li>
+                    <li>Перевёл хранение данных с небезопасного eval на структурированный JSON.</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-geofizika">
+                <h3 class="role-title">НПФ «Геофизика»</h3>
+                <p class="role-sub">сентябрь 2013 – май 2014</p>
+                <ul class="work">
+                    <li>Работал над десктопным WPF-приложением для высоконагруженной системы интерпретации геофизических данных (MVVM, Prism / MEF, C#, .NET).</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-distinct">
+                <h3 class="role-title">ООО «Дистинкт»</h3>
+                <p class="role-sub">октябрь 2012 – июль 2013</p>
+                <ul class="work">
+                    <li>Работал над функциональным и регрессионным тестированием корпоративных приложений.</li>
+                </ul>
+            </article>
+
+            <article class="role" id="exp-medialux-2011">
+                <h3 class="role-title">ООО «Медиалюкс»</h3>
+                <p class="role-sub">сентябрь 2011 – июль 2012</p>
+                <ul class="work">
+                    <li>Разрабатывал веб-приложения на ASP.NET с Entity Framework и WCF-сервисами; решения на SharePoint 2010, интеграция с СЭД и внутренняя автоматизация.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 03 · Пет-проекты -->
+        <section class="section" id="projects">
+            <div class="section-head">
+                <p class="eyebrow">03 / Пет-проекты</p>
+                <h2 class="section-title">Проекты</h2>
+            </div>
+            <ul class="work">
+                <li><strong>Разговорный Telegram-бот</strong> — бот на Node.js, ведущий диалог в образе персонажа через LLM API: проработка персоны и промпта, управление состоянием диалога. Исходники: <a href="https://github.com/unfalse/unfalsewh40kbot" target="_blank" rel="noopener">github.com/unfalse/unfalsewh40kbot</a></li>
+                <li><strong>Локальный инференс LLM</strong> — llama.cpp с CUDA на потребительской видеокарте, запущенный как systemd-сервис; React-клиент с потоковой передачей токенов через SSE, Zustand и Tailwind CSS v4 (в работе).</li>
+                <li><strong>Space Town</strong> — прототип браузерной игры на TypeScript и Canvas без фреймворка: собственный цикл отрисовки, состояние сущностей, обработка ввода.
+                    Поиграть можно <a href="https://st.unfalsecoding.net" target="_blank" rel="noopener">здесь</a>. Исходники: <a href="https://github.com/unfalse/space-town-game" target="_blank" rel="noopener">github.com/unfalse/space-town-game</a></li>
+                <li><strong>Расширение для Chrome (Manifest V3)</strong> — трекер откликов на вакансии: сканирование страниц через MutationObserver, popup-интерфейс, выгрузка в CSV. Исходники: <a href="https://github.com/unfalse/job-application-tracker" target="_blank" rel="noopener">github.com/unfalse/job-application-tracker</a></li>
+                <li><strong>unfalsecoding.net</strong> — личный сайт на собственном сервере DigitalOcean: Nginx, TLS через Let's Encrypt. Исходники: <a href="https://github.com/unfalse/homepage" target="_blank" rel="noopener">github.com/unfalse/homepage</a></li>
+            </ul>
+            <p class="tags-label">Код</p>
+            <ul class="tags">
+                <li class="tag"><a href="https://github.com/unfalse" target="_blank" rel="noopener">github.com/unfalse</a></li>
+            </ul>
+        </section>
+
+        <!-- 04 · Ключевые навыки -->
+        <section class="section" id="coreskills">
+            <div class="section-head">
+                <p class="eyebrow">04 / Инструментарий</p>
+                <h2 class="section-title">Ключевые навыки</h2>
+            </div>
+            <dl class="specs tight">
+                <div class="spec">
+                    <dt>Frontend</dt>
+                    <dd>React, TypeScript, JavaScript (ES6+), Redux, Redux-Saga, Redux Toolkit, HTML5, CSS3 / SASS / LESS</dd>
+                </div>
+                <div class="spec">
+                    <dt>Backend</dt>
+                    <dd>Node.js, REST API, PostgreSQL, SQL-базы данных</dd>
+                </div>
+                <div class="spec">
+                    <dt>UI</dt>
+                    <dd>AG Grid, Ant Design, Storybook, дизайн-системы</dd>
+                </div>
+                <div class="spec">
+                    <dt>Тестирование</dt>
+                    <dd>Jest, React Testing Library, Enzyme, redux-saga-test-plan</dd>
+                </div>
+                <div class="spec">
+                    <dt>Инструменты</dt>
+                    <dd>Webpack, Babel, ESLint, Git, GitLab CI/CD, Jenkins, Docker, AWS SDK, DigitalOcean, Nginx</dd>
+                </div>
+                <div class="spec">
+                    <dt>AI</dt>
+                    <dd>Разработка с AI-ассистентами (Copilot, Gemini в продакшене; Claude Code, Cursor в пет-проектах); LLM API, стриминг токенов через SSE, локальный инференс (llama.cpp, CUDA)</dd>
+                </div>
+            </dl>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        <span>© 2026 Искандер Губайдуллин</span>
+        <a href="https://t.me/zhpg7" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:fadeout01@gmail.com">E-mail</a>
+        <a class="back-top" href="#top">Наверх ↑</a>
+    </footer>
+
+    <script>
+        const links = [...document.querySelectorAll('.nav a')];
+        const byId = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+        const sections = [...document.querySelectorAll('.section')];
+
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    links.forEach(a => a.classList.remove('is-active'));
+                    const active = byId.get(entry.target.id);
+                    if (active) active.classList.add('is-active');
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+        sections.forEach(s => spy.observe(s));
+
+        document.querySelectorAll('.lang a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                try { localStorage.setItem('site-lang', a.getAttribute('href') === 'ru.html' ? 'ru' : 'en'); } catch (e) {}
+            });
+        });
+    </script>
+</body>
+</html>
