@@ -154,6 +154,42 @@ a {
     background: var(--accent);
 }
 
+/* ---------- nav cluster + language switch ---------- */
+.topbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px 18px;
+    flex-wrap: wrap;
+}
+
+.lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 13px;
+}
+
+.lang a {
+    color: var(--faint);
+    padding: 4px 7px;
+    border-radius: 7px;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+
+.lang a:hover {
+    color: var(--ink);
+    background: #fff;
+}
+
+.lang a.is-active {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.lang .sep {
+    color: var(--line);
+}
+
 /* ---------- sections ---------- */
 .section {
     padding: 76px 0;
